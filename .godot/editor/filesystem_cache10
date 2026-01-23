@@ -1,0 +1,45 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1769186545
+export_presets.cfg::TextFile/TextFile::-1::1763667185::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::8619709586152117831::1722116818::1748030528::1::::<><><>0<>0<>f967080e49fc39924136cea1d17aa461<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://assets/::1769180990
+green.tres::StandardMaterial3D/StandardMaterial3D::6489732810082787322::1769178835::0::1::::<><><>0<>0<><>::
+info icon.png::CompressedTexture2D/CompressedTexture2D::3855350462666042566::1763612274::1763612295::1::::<><><>0<>0<>5cbc212201f2786cd3c42e0648de5bc8<>res://.godot/imported/info icon.png-4e585dcaef5af7e1bc8acd62a54b80ed.ctex::
+white.tres::StandardMaterial3D/StandardMaterial3D::1148885180629440592::1769178688::0::1::::<><><>0<>0<><>::
+::res://q-tabela/::1762556011
+::res://rat with 12 animations/::1769180990
+screenshot004.jpg::CompressedTexture2D/CompressedTexture2D::4462095790603743194::1747771220::1748030529::1::::<><><>0<>0<>83d078f3ffd05cb229347ef94624a5a6<>res://.godot/imported/screenshot004.jpg-fa8bb1572083f74286979482f43d650c.ctex::
+screenshot019.jpg::CompressedTexture2D/CompressedTexture2D::207077716855131087::1747771220::1748030529::1::::<><><>0<>0<>42a8fc06cfc41c2c4cd0159b222b9f7e<>res://.godot/imported/screenshot019.jpg-f43c188e7c1a8249d327929b8ec9ad67.ctex::
+::res://rat with 12 animations/Rat_gltf/::1769180990
+Rat.gltf::PackedScene/PackedScene::8620366194981492336::1747771357::1748030534::1::::<><><>0<>0<>91c68f6fe09dfc761d8670d053721650<>res://.godot/imported/Rat.gltf-d23c0f62a5e2cd093d9bc467655ac67d.scn::uid://c5dg54a4devs7::::res://rat with 12 animations/Rat_gltf/Rat_0.jpg<>uid://11mrgk8r7amv::::res://rat with 12 animations/Rat_gltf/Rat_1.jpg<>uid://ca3gmlb0mevo6::::res://rat with 12 animations/Rat_gltf/Rat_2.jpg
+Rat_0.jpg::CompressedTexture2D/CompressedTexture2D::6885119210062071240::1747771431::1748030529::1::::<><><>0<>0<>a766ebbe32e982607f32076714705111<>res://.godot/imported/Rat_0.jpg-fb9b4eb7e0c52221a5319dbb2937a1d2.s3tc.ctex::
+Rat_1.jpg::CompressedTexture2D/CompressedTexture2D::1879343050715466845::1747771433::1748030529::1::::<><><>0<>0<>3875735dd985951cc148083ade85b8a8<>res://.godot/imported/Rat_1.jpg-16a60bd963934892d075e645ed48b3ed.s3tc.ctex::
+Rat_2.jpg::CompressedTexture2D/CompressedTexture2D::4831030256437093007::1747771433::1748030529::1::::<><><>0<>0<>3af1eb4a3e7c260da034c52abc6bb45d<>res://.godot/imported/Rat_2.jpg-b8b70f86bfda0bbd45b535af1b6ac47f.s3tc.ctex::
+::res://rat with 12 animations/Textures/::1769180990
+Ch_Rat_01_A_Albedo2.png::CompressedTexture2D/CompressedTexture2D::2062997738667612692::1747771365::1748030529::1::::<><><>0<>0<>221256cb52365ea63f789f27efb175a2<>res://.godot/imported/Ch_Rat_01_A_Albedo2.png-457b5ddeb9606352b3ab008295d443f4.ctex::
+Ch_Rat_01_A_Albedo.png::CompressedTexture2D/CompressedTexture2D::7994235234947778947::1747771364::1748030529::1::::<><><>0<>0<>f773925c89acda3f273b5517815cf725<>res://.godot/imported/Ch_Rat_01_A_Albedo.png-2697c88547af1e3660de46b14dafc631.ctex::
+Ch_Rat_01_A_Normal.png::CompressedTexture2D/CompressedTexture2D::5952061242932246273::1747771365::1748030529::1::::<><><>0<>0<>a94da8da3a651a7d8684030ca6e90175<>res://.godot/imported/Ch_Rat_01_A_Normal.png-371dc0456864b9aaf2c587ca1577224b.ctex::
+Ch_Rat_01_A_Raughness.png::CompressedTexture2D/CompressedTexture2D::1994221633408180499::1747771365::1748030528::1::::<><><>0<>0<>bffd152e5d62b362c0f02a53a76c7432<>res://.godot/imported/Ch_Rat_01_A_Raughness.png-a5347b2ad318c8f3215fd531efe85399.ctex::
+Ch_Rat_01_A_Spec.png::CompressedTexture2D/CompressedTexture2D::5487153561977754434::1747771365::1748030528::1::::<><><>0<>0<>e8102b14b0285a91a0e2da86222260fa<>res://.godot/imported/Ch_Rat_01_A_Spec.png-f1e5b9f40ca96f44295a0704430e9a3a.ctex::
+::res://scenes/::1769186523
+ch_rat_01_a.tscn::PackedScene/PackedScene::1897248101236296288::1769177892::0::1::::<><><>0<>0<><>::
+FollowTarget.tscn::PackedScene/PackedScene::6366769249062580325::1769178276::0::1::::<><><>0<>0<><>::uid://cj3n5i57jcls7::::res://scripts/follow_target.gd
+Personagem.tscn::PackedScene/PackedScene::241581206019644341::1769178249::0::1::::<><><>0<>0<><>::uid://djrr8a43tc5c5::::res://scripts/personagem.gd<>uid://cwyd0216jktn6::::res://scenes/FollowTarget.tscn<>uid://cv6cppta0q7vr::::res://scenes/Rat_.tscn<>uid://c2y08k5et5dxu::::res://scenes/WalkAround.tscn
+Rat_.tscn::PackedScene/PackedScene::6310951832290452651::1769185586::0::1::::<><><>0<>0<><>::uid://crj4om6kqkrho::::res://scenes/rig_root.tscn<>uid://2bbntjydmhsq::::res://scenes/ch_rat_01_a.tscn
+rig_root.tscn::PackedScene/PackedScene::5986417581569473808::1748130370::0::1::::<><><>0<>0<><>::uid://c5dg54a4devs7::::res://rat with 12 animations/Rat_gltf/Rat_0.jpg<>uid://11mrgk8r7amv::::res://rat with 12 animations/Rat_gltf/Rat_1.jpg<>uid://ca3gmlb0mevo6::::res://rat with 12 animations/Rat_gltf/Rat_2.jpg
+WalkAround.tscn::PackedScene/PackedScene::6719062639514483662::1769177882::0::1::::<><><>0<>0<><>::uid://csqibwam2htmd::::res://scripts/walk_around.gd
+world.tscn::PackedScene::7580942388973831697::1769186523::0::1::::<><><>0<>0<><>::uid://bu6tcaa5rhk51::::res://assets/info icon.png<>uid://dvhhqydr877x3::::res://scripts/WallArea.gd<>uid://rxwh3e7yql77::::res://scripts/ResponseLever.gd<>uid://bg40s06hjoh28::::res://sounds/Click.mp3<>uid://bqiorrnlhbueb::::res://scripts/ResponseLeverArea.gd<>uid://qmr8as714n5y::::res://assets/white.tres<>uid://ci01say1duyue::::res://scripts/FoodDispenser.gd<>uid://bp2xawg8ii2bx::::res://scripts/FoodArea.gd<>uid://crqm2keex2icc::::res://scripts/FoodAreaSmell.gd<>uid://dpa2pc6iej14::::res://scenes/Personagem.tscn
+::res://scripts/::1769180990
+follow_target.gd::GDScript/GDScript::5463186899962264400::1748048653::0::1::::FollowTarget<>NavigationAgent3D<><>0<>0<><>::
+FoodArea.gd::GDScript/GDScript::3496389194749764485::1723592615::0::1::::Food<>Area3D<><>0<>0<><>::
+FoodAreaSmell.gd::GDScript/GDScript::5999859105272605870::1739922427::0::1::::Smell<>Area3D<><>0<>0<><>::
+FoodDispenser.gd::GDScript/GDScript::5387572384705622300::1769178888::0::1::::<>MeshInstance3D<><>0<>0<><>::
+personagem.gd::GDScript/GDScript::7827147231813525978::1769178525::0::1::::<>CharacterBody3D<><>0<>0<><>::
+ResponseLever.gd::GDScript/GDScript::1242040782907791884::1763412870::0::1::::<>MeshInstance3D<><>0<>0<><>::
+ResponseLeverArea.gd::GDScript/GDScript::3526838513817827569::1739924370::0::1::::Lever<>Area3D<><>0<>0<><>::
+RLAgent.gd::GDScript/GDScript::2482287124911824696::1758669947::0::1::::<>Node<><>0<>0<><>::
+textos_experimento.json::JSON/JSON::-1::1763611922::0::1::::<><><>0<>0<><>::
+walk_around.gd::GDScript/GDScript::6069759274767084879::1748040405::0::1::::WalkAround<>Node3D<><>0<>0<><>::
+WallArea.gd::GDScript/GDScript::8648133269420858778::1739926672::0::1::::Wall<>Area3D<><>0<>0<><>::
+::res://sounds/::1769180990
+Click.mp3::AudioStreamMP3/AudioStreamMP3::2868972130801803379::1723517169::1748030528::1::::<><><>0<>0<>ef658da1092482403fa5001508e356f2<>res://.godot/imported/Click.mp3-b4790b0704cf0c4626994c7ceef28cbe.mp3str::

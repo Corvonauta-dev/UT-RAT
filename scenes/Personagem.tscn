@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://dpa2pc6iej14"]
+
+[ext_resource type="Script" uid="uid://djrr8a43tc5c5" path="res://scripts/personagem.gd" id="1_y0rq2"]
+[ext_resource type="PackedScene" uid="uid://cwyd0216jktn6" path="res://scenes/FollowTarget.tscn" id="2_y0rq2"]
+[ext_resource type="PackedScene" uid="uid://cv6cppta0q7vr" path="res://scenes/Rat_.tscn" id="4_753fr"]
+[ext_resource type="PackedScene" uid="uid://c2y08k5et5dxu" path="res://scenes/WalkAround.tscn" id="4_haeww"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_haeww"]
+size = Vector3(1.63525, 1.5249, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_haeww"]
+
+[node name="Personagem" type="CharacterBody3D"]
+script = ExtResource("1_y0rq2")
+
+[node name="FollowTarget" parent="." instance=ExtResource("2_y0rq2")]
+
+[node name="WalkAround" parent="." instance=ExtResource("4_haeww")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4589, 1.56561)
+
+[node name="Rat" parent="." instance=ExtResource("4_753fr")]
+
+[node name="RigRoot" parent="Rat" index="0"]
+transform = Transform3D(2.54, 0, 0, 0, -1.11027e-07, 2.54, 0, -2.54, -1.11027e-07, -1.17213e-05, -1.21117e-05, 1.52729e-12)
+
+[node name="Smell" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Smell"]
+transform = Transform3D(0.744, 0, 0, 0, 1.5, 0, 0, 0, 2, -0.0255972, 1.19326, 1.30796)
+shape = SubResource("BoxShape3D_haeww")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 0.1, 0, 0, 0, 2, 0, 0.125517, -0.0965717)
+shape = SubResource("CylinderShape3D_haeww")
+
+[connection signal="navigation_finished" from="FollowTarget" to="." method="_on_follow_target_navigation_finished"]
+[connection signal="animation_finished" from="Rat/AnimationTree" to="." method="_on_animation_tree_animation_finished"]
+[connection signal="area_entered" from="Smell" to="." method="_on_smell_area_entered"]
+
+[editable path="Rat"]

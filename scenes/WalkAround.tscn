@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2y08k5et5dxu"]
+
+[ext_resource type="Script" uid="uid://csqibwam2htmd" path="res://scripts/walk_around.gd" id="1_hpyhv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i2y7c"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ct13j"]
+material = SubResource("StandardMaterial3D_i2y7c")
+
+[node name="WalkAround" type="Node3D"]
+script = ExtResource("1_hpyhv")
+
+[node name="TargetArm" type="SpringArm3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.249476, 0)
+
+[node name="Target" type="Marker3D" parent="TargetArm"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TargetArm/Target"]
+transform = Transform3D(0.101658, 0, 0, 0, 0.111099, 0, 0, 0, 0.112314, 0, 0, 0)
+visible = false
+mesh = SubResource("SphereMesh_ct13j")

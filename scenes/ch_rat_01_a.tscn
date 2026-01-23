@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://2bbntjydmhsq"]
+
+[node name="Ch_Rat_01_A" type="Node3D"]
+transform = Transform3D(2.54, 3.78489e-08, 0, 0, 0, 2.54, 3.78489e-08, -2.54, 0, 0, 0, 0)

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwyd0216jktn6"]
+
+[ext_resource type="Script" uid="uid://cj3n5i57jcls7" path="res://scripts/follow_target.gd" id="1_jqiam"]
+
+[node name="FollowTarget" type="NavigationAgent3D"]
+script = ExtResource("1_jqiam")
+
+[connection signal="velocity_computed" from="." to="." method="_on_velocity_computed"]

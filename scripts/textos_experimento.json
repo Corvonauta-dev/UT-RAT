@@ -1,0 +1,30 @@
+{
+	"teoria": "[center][b][font_size=18]FUNDAMENTOS DA ANÁLISE EXPERIMENTAL[/font_size][/b][/center]\n\n[b][color=yellow]1. Comportamento Operante[/color][/b]\nO organismo opera sobre o meio. A consequência da resposta (reforço ou punição) determina se o comportamento será mantido ou extinto.\n\n[b][color=yellow]2. Linha de Base[/color][/b]\nFase inicial sem intervenção. Serve para observar e registar a frequência natural dos comportamentos antes de qualquer treino.\n\n[b][color=yellow]3. Treino ao Comedouro[/color][/b]\nO animal precisa aprender primeiro que o som do comedouro indica disponibilidade de alimento (Reforço Condicionado).\n\n[b][color=yellow]4. Reforçamento Positivo[/color][/b]\nAdição de um estímulo (comida) após uma resposta, aumentando a probabilidade dela ocorrer novamente. A imediaticidade é crucial.\n\n[b][color=yellow]5. Modelagem (Shaping)[/color][/b]\nO comportamento final (pressionar a barra) é complexo. Reforçamos aproximações sucessivas: primeiro olhar, depois aproximar, depois tocar, até pressionar.\n\n[b][color=yellow]6. Extinção[/color][/b]\nConsiste na suspensão do reforço. O rato pressiona a barra e nada acontece. O comportamento tende a aumentar temporariamente (burst) e depois desaparecer.",
+	"fases": {
+		"1": {
+			"titulo": "[center][b][color=yellow]FASE 01 – LINHA DE BASE[/color][/b][/center]",
+			"instrucao": "O animal foi inserido na caixa. Ele não conhece a barra nem o comedouro.\n\n[b]OBJETIVO DO ALUNO:[/b]\nObserve e registre a frequência dos comportamentos naturais (explorar, levantar, limpar-se).",
+			"criterio": "[i]Critério: Observação livre.[/i]"
+		},
+		"2": {
+			"titulo": "[center][b][color=green]FASE 02 – TREINO AO COMEDOURO[/color][/b][/center]",
+			"instrucao": "Precisamos ensinar ao rato que o SOM da barra significa COMIDA.\n\n[b]PROCEDIMENTO:[/b]\n1. Espere o rato chegar PERTO do comedouro.\n2. Pressione 'Barra' para liberar comida.\n3. Repita até ele associar o som à recompensa.",
+			"criterio": "[i]Critério: 10 coletas consecutivas.[/i]"
+		},
+		"3": {
+			"titulo": "[center][b][color=cyan]FASE 03 – MODELAGEM (SHAPING)[/color][/b][/center]",
+			"instrucao": "Agora ensinaremos o comportamento complexo de pressionar a barra.\n\n[b]PROCEDIMENTO:[/b]\n1. Reforce quando ele [b]OLHAR[/b] para a barra.\n2. Reforce quando ele se [b]APROXIMAR[/b].\n3. Por fim, reforce apenas o [b]TOQUE[/b] na barra.",
+			"criterio": "[i]Critério: 10 pressões consecutivas autônomas.[/i]"
+		},
+		"4": {
+			"titulo": "[center][b][color=red]FASE 04 – EXTINÇÃO[/color][/b][/center]",
+			"instrucao": "A liberação de comida foi DESATIVADA.\n\n[b]OBSERVAÇÃO:[/b]\nO rato continuará pressionando a barra esperando comida (Burst), mas eventualmente desistirá.\nObserve as reações emocionais.",
+			"criterio": "[i]Critério: 10 minutos sem resposta.[/i]"
+		},
+		"5": {
+			"titulo": "[center][b]FIM DO EXPERIMENTO[/b][/center]",
+			"instrucao": "O comportamento foi extinto com sucesso.\n\n[b]CONCLUSÃO:[/b]\nVocê observou a aquisição, manutenção e extinção de um comportamento operante.",
+			"criterio": "Experimento Concluído."
+		}
+	}
+}

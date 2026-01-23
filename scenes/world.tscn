@@ -1,0 +1,524 @@
+[gd_scene load_steps=67 format=3 uid="uid://dgajapw3roxjd"]
+
+[ext_resource type="Texture2D" uid="uid://bu6tcaa5rhk51" path="res://assets/info icon.png" id="1_w7kh3"]
+[ext_resource type="Script" uid="uid://dvhhqydr877x3" path="res://scripts/WallArea.gd" id="2_e3hyu"]
+[ext_resource type="Script" uid="uid://rxwh3e7yql77" path="res://scripts/ResponseLever.gd" id="3_q5onr"]
+[ext_resource type="AudioStream" uid="uid://bg40s06hjoh28" path="res://sounds/Click.mp3" id="4_jhx03"]
+[ext_resource type="Script" uid="uid://bqiorrnlhbueb" path="res://scripts/ResponseLeverArea.gd" id="5_o8fc1"]
+[ext_resource type="Material" uid="uid://qmr8as714n5y" path="res://assets/white.tres" id="6_xo05s"]
+[ext_resource type="Script" uid="uid://ci01say1duyue" path="res://scripts/FoodDispenser.gd" id="7_dss4m"]
+[ext_resource type="Script" uid="uid://bp2xawg8ii2bx" path="res://scripts/FoodArea.gd" id="8_7t5mc"]
+[ext_resource type="Script" uid="uid://crqm2keex2icc" path="res://scripts/FoodAreaSmell.gd" id="9_lakw3"]
+[ext_resource type="PackedScene" uid="uid://dpa2pc6iej14" path="res://scenes/Personagem.tscn" id="10_pm21f"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_t3is1"]
+
+[sub_resource type="Sky" id="Sky_arxks"]
+sky_material = SubResource("ProceduralSkyMaterial_t3is1")
+
+[sub_resource type="Environment" id="Environment_11ypg"]
+background_mode = 2
+sky = SubResource("Sky_arxks")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8yt4t"]
+transparency = 1
+albedo_color = Color(0.188235, 1, 1, 0.027451)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pv1el"]
+material = SubResource("StandardMaterial3D_8yt4t")
+size = Vector3(10, 0.1, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_jo5x4"]
+data = PackedVector3Array(-5, 0.05, 5, 5, 0.05, 5, -5, -0.05, 5, 5, 0.05, 5, 5, -0.05, 5, -5, -0.05, 5, 5, 0.05, -5, -5, 0.05, -5, 5, -0.05, -5, -5, 0.05, -5, -5, -0.05, -5, 5, -0.05, -5, 5, 0.05, 5, 5, 0.05, -5, 5, -0.05, 5, 5, 0.05, -5, 5, -0.05, -5, 5, -0.05, 5, -5, 0.05, -5, -5, 0.05, 5, -5, -0.05, -5, -5, 0.05, 5, -5, -0.05, 5, -5, -0.05, -5, 5, 0.05, 5, -5, 0.05, 5, 5, 0.05, -5, -5, 0.05, 5, -5, 0.05, -5, 5, 0.05, -5, -5, -0.05, 5, 5, -0.05, 5, -5, -0.05, -5, 5, -0.05, 5, 5, -0.05, -5, -5, -0.05, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w3juv"]
+albedo_color = Color(0.4, 0.4, 0.4, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yyqim"]
+lightmap_size_hint = Vector2i(64, 29)
+material = SubResource("StandardMaterial3D_w3juv")
+bottom_radius = 2.0
+height = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lcd54"]
+albedo_color = Color(0, 0.568627, 0.247059, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jj0ys"]
+material = SubResource("StandardMaterial3D_lcd54")
+top_radius = 0.2
+bottom_radius = 0.3
+height = 0.1
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5d2jc"]
+albedo_color = Color(0.901961, 0.0431373, 0, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_qntqn"]
+material = SubResource("StandardMaterial3D_5d2jc")
+top_radius = 0.2
+bottom_radius = 0.3
+height = 0.1
+
+[sub_resource type="Gradient" id="Gradient_ioo17"]
+colors = PackedColorArray(0.43134, 0.43134, 0.43134, 1, 0.431373, 0.431373, 0.431373, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wse8f"]
+gradient = SubResource("Gradient_ioo17")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_wse8f"]
+colors = PackedColorArray(0, 0.582466, 0, 1, 0, 0.584314, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ic0uy"]
+gradient = SubResource("Gradient_wse8f")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_ic0uy"]
+colors = PackedColorArray(0.431373, 0.431373, 0.431373, 1, 0.431373, 0.431373, 0.431373, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_k3n1d"]
+gradient = SubResource("Gradient_ic0uy")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_2o6r5"]
+colors = PackedColorArray(0, 0.584314, 0, 1, 0, 0.584314, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_70uel"]
+gradient = SubResource("Gradient_2o6r5")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_k3n1d"]
+colors = PackedColorArray(0.431373, 0.431373, 0.431373, 1, 0.431373, 0.431373, 0.431373, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2o6r5"]
+gradient = SubResource("Gradient_k3n1d")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_70uel"]
+colors = PackedColorArray(0, 0.584314, 0, 1, 0, 0.584314, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_hiqwa"]
+gradient = SubResource("Gradient_70uel")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_2u3nc"]
+colors = PackedColorArray(0.431373, 0.431373, 0.431373, 1, 0.431373, 0.431373, 0.431373, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_udxuc"]
+gradient = SubResource("Gradient_2u3nc")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_ikiii"]
+colors = PackedColorArray(0, 0.584314, 0, 1, 0, 0.584314, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cbp6q"]
+gradient = SubResource("Gradient_ikiii")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_hiqwa"]
+colors = PackedColorArray(0.431373, 0.431373, 0.431373, 1, 0.431373, 0.431373, 0.431373, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2u3nc"]
+gradient = SubResource("Gradient_hiqwa")
+width = 200
+height = 20
+
+[sub_resource type="Gradient" id="Gradient_udxuc"]
+colors = PackedColorArray(0, 0.584314, 0, 1, 0, 0.584314, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ikiii"]
+gradient = SubResource("Gradient_udxuc")
+width = 200
+height = 20
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_wse8f"]
+vertices = PackedVector3Array(-4.29735, 0.898665, -4.3, -4.29735, 0.898665, 4.45, 4.20265, 0.898665, 4.45, 4.20265, 0.898665, -4.3)
+polygons = [PackedInt32Array(3, 2, 0), PackedInt32Array(0, 2, 1)]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k124h"]
+albedo_color = Color(0.588235, 0.294118, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_t6hkp"]
+material = SubResource("StandardMaterial3D_k124h")
+size = Vector2(10, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_qlu7n"]
+data = PackedVector3Array(5, 0, 5, -5, 0, 5, 5, 0, -5, -5, 0, 5, -5, 0, -5, 5, 0, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gd7rc"]
+albedo_color = Color(0.588235, 0.294118, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_e7jor"]
+material = SubResource("StandardMaterial3D_gd7rc")
+size = Vector3(0.1, 10, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_2c53v"]
+data = PackedVector3Array(-0.05, 5, 5, 0.05, 5, 5, -0.05, -5, 5, 0.05, 5, 5, 0.05, -5, 5, -0.05, -5, 5, 0.05, 5, -5, -0.05, 5, -5, 0.05, -5, -5, -0.05, 5, -5, -0.05, -5, -5, 0.05, -5, -5, 0.05, 5, 5, 0.05, 5, -5, 0.05, -5, 5, 0.05, 5, -5, 0.05, -5, -5, 0.05, -5, 5, -0.05, 5, -5, -0.05, 5, 5, -0.05, -5, -5, -0.05, 5, 5, -0.05, -5, 5, -0.05, -5, -5, 0.05, 5, 5, -0.05, 5, 5, 0.05, 5, -5, -0.05, 5, 5, -0.05, 5, -5, 0.05, 5, -5, -0.05, -5, 5, 0.05, -5, 5, -0.05, -5, -5, 0.05, -5, 5, 0.05, -5, -5, -0.05, -5, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nbctk"]
+albedo_color = Color(0.588235, 0.294118, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5mqqy"]
+material = SubResource("StandardMaterial3D_nbctk")
+size = Vector3(0.1, 10, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_s475y"]
+data = PackedVector3Array(-0.05, 5, 5, 0.05, 5, 5, -0.05, -5, 5, 0.05, 5, 5, 0.05, -5, 5, -0.05, -5, 5, 0.05, 5, -5, -0.05, 5, -5, 0.05, -5, -5, -0.05, 5, -5, -0.05, -5, -5, 0.05, -5, -5, 0.05, 5, 5, 0.05, 5, -5, 0.05, -5, 5, 0.05, 5, -5, 0.05, -5, -5, 0.05, -5, 5, -0.05, 5, -5, -0.05, 5, 5, -0.05, -5, -5, -0.05, 5, 5, -0.05, -5, 5, -0.05, -5, -5, 0.05, 5, 5, -0.05, 5, 5, 0.05, 5, -5, -0.05, 5, 5, -0.05, 5, -5, 0.05, 5, -5, -0.05, -5, 5, 0.05, -5, 5, -0.05, -5, -5, 0.05, -5, 5, 0.05, -5, -5, -0.05, -5, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_alk2m"]
+albedo_color = Color(0.588235, 0.294118, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_rioix"]
+material = SubResource("StandardMaterial3D_alk2m")
+size = Vector3(0.1, 10, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_o4il3"]
+data = PackedVector3Array(-0.05, 5, 5, 0.05, 5, 5, -0.05, -5, 5, 0.05, 5, 5, 0.05, -5, 5, -0.05, -5, 5, 0.05, 5, -5, -0.05, 5, -5, 0.05, -5, -5, -0.05, 5, -5, -0.05, -5, -5, 0.05, -5, -5, 0.05, 5, 5, 0.05, 5, -5, 0.05, -5, 5, 0.05, 5, -5, 0.05, -5, -5, 0.05, -5, 5, -0.05, 5, -5, -0.05, 5, 5, -0.05, -5, -5, -0.05, 5, 5, -0.05, -5, 5, -0.05, -5, -5, 0.05, 5, 5, -0.05, 5, 5, 0.05, 5, -5, -0.05, 5, 5, -0.05, 5, -5, 0.05, 5, -5, -0.05, -5, 5, 0.05, -5, 5, -0.05, -5, -5, 0.05, -5, 5, 0.05, -5, -5, -0.05, -5, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2gxug"]
+transparency = 1
+albedo_color = Color(0.188235, 1, 1, 0.027451)
+
+[sub_resource type="BoxMesh" id="BoxMesh_pabnb"]
+material = SubResource("StandardMaterial3D_2gxug")
+size = Vector3(0.1, 10, 10)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_11cf3"]
+data = PackedVector3Array(-0.05, 5, 5, 0.05, 5, 5, -0.05, -5, 5, 0.05, 5, 5, 0.05, -5, 5, -0.05, -5, 5, 0.05, 5, -5, -0.05, 5, -5, 0.05, -5, -5, -0.05, 5, -5, -0.05, -5, -5, 0.05, -5, -5, 0.05, 5, 5, 0.05, 5, -5, 0.05, -5, 5, 0.05, 5, -5, 0.05, -5, -5, 0.05, -5, 5, -0.05, 5, -5, -0.05, 5, 5, -0.05, -5, -5, -0.05, 5, 5, -0.05, -5, 5, -0.05, -5, -5, 0.05, 5, 5, -0.05, 5, 5, 0.05, 5, -5, -0.05, 5, 5, -0.05, 5, -5, 0.05, 5, -5, -0.05, -5, 5, 0.05, -5, 5, -0.05, -5, -5, 0.05, -5, 5, 0.05, -5, -5, -0.05, -5, -5)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gi6gx"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_dcd3y"]
+material = SubResource("StandardMaterial3D_gi6gx")
+size = Vector3(0.5, 0.1, 2)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_pgku3"]
+data = PackedVector3Array(-0.25, 0.05, 1, 0.25, 0.05, 1, -0.25, -0.05, 1, 0.25, 0.05, 1, 0.25, -0.05, 1, -0.25, -0.05, 1, 0.25, 0.05, -1, -0.25, 0.05, -1, 0.25, -0.05, -1, -0.25, 0.05, -1, -0.25, -0.05, -1, 0.25, -0.05, -1, 0.25, 0.05, 1, 0.25, 0.05, -1, 0.25, -0.05, 1, 0.25, 0.05, -1, 0.25, -0.05, -1, 0.25, -0.05, 1, -0.25, 0.05, -1, -0.25, 0.05, 1, -0.25, -0.05, -1, -0.25, 0.05, 1, -0.25, -0.05, 1, -0.25, -0.05, -1, 0.25, 0.05, 1, -0.25, 0.05, 1, 0.25, 0.05, -1, -0.25, 0.05, 1, -0.25, 0.05, -1, 0.25, 0.05, -1, -0.25, -0.05, 1, 0.25, -0.05, 1, -0.25, -0.05, -1, 0.25, -0.05, 1, 0.25, -0.05, -1, -0.25, -0.05, -1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n08cw"]
+size = Vector3(1.25366, 0.5, 2)
+
+[sub_resource type="BoxMesh" id="BoxMesh_v70bd"]
+lightmap_size_hint = Vector2i(11, 14)
+material = ExtResource("6_xo05s")
+size = Vector3(0.5, 0.3, 1)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fxt0n"]
+data = PackedVector3Array(-0.25, 0.15, 0.5, 0.25, 0.15, 0.5, -0.25, -0.15, 0.5, 0.25, 0.15, 0.5, 0.25, -0.15, 0.5, -0.25, -0.15, 0.5, 0.25, 0.15, -0.5, -0.25, 0.15, -0.5, 0.25, -0.15, -0.5, -0.25, 0.15, -0.5, -0.25, -0.15, -0.5, 0.25, -0.15, -0.5, 0.25, 0.15, 0.5, 0.25, 0.15, -0.5, 0.25, -0.15, 0.5, 0.25, 0.15, -0.5, 0.25, -0.15, -0.5, 0.25, -0.15, 0.5, -0.25, 0.15, -0.5, -0.25, 0.15, 0.5, -0.25, -0.15, -0.5, -0.25, 0.15, 0.5, -0.25, -0.15, 0.5, -0.25, -0.15, -0.5, 0.25, 0.15, 0.5, -0.25, 0.15, 0.5, 0.25, 0.15, -0.5, -0.25, 0.15, 0.5, -0.25, 0.15, -0.5, 0.25, 0.15, -0.5, -0.25, -0.15, 0.5, 0.25, -0.15, 0.5, -0.25, -0.15, -0.5, 0.25, -0.15, 0.5, 0.25, -0.15, -0.5, -0.25, -0.15, -0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_bfbc0"]
+size = Vector3(0.6, 0.4, 1.1)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_26t71"]
+
+[node name="World" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_11ypg")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 18.0999, -15.3429)
+light_energy = 2.0
+light_angular_distance = 7.27
+shadow_enabled = true
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 5, -12)
+
+[node name="Roof" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 0)
+mesh = SubResource("BoxMesh_pv1el")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Roof"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Roof/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_jo5x4")
+
+[node name="Loudsoeaker" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 4.72, 7, 0)
+mesh = SubResource("CylinderMesh_yyqim")
+
+[node name="Light" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 4.9, 4.5, 1)
+mesh = SubResource("CylinderMesh_jj0ys")
+
+[node name="Light1" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 4.9, 4.5, -1)
+mesh = SubResource("CylinderMesh_qntqn")
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="UI"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 0.4725
+offset_left = -240.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 394.0
+grow_horizontal = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="InfoButton" type="Button" parent="UI/VBoxContainer2"]
+custom_minimum_size = Vector2(20, 40)
+layout_mode = 2
+icon = ExtResource("1_w7kh3")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="PanelContainer" type="PanelContainer" parent="UI/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Label" type="RichTextLabel" parent="UI/VBoxContainer2/PanelContainer"]
+custom_minimum_size = Vector2(230, 270)
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 4
+bbcode_enabled = true
+fit_content = true
+autowrap_mode = 2
+
+[node name="Button" type="Button" parent="UI/VBoxContainer2"]
+layout_mode = 2
+text = "Barra"
+
+[node name="Button2" type="Button" parent="UI/VBoxContainer2"]
+layout_mode = 2
+text = "Proxima Fase"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI"]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 241.0
+offset_bottom = 60.0
+
+[node name="FeederProgressTitle" type="Label" parent="UI/VBoxContainer"]
+layout_mode = 2
+text = "Critério Treino ao Comedouro"
+
+[node name="FeederProgressLabel" type="Label" parent="UI/VBoxContainer"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+
+[node name="FeederProgress" type="TextureProgressBar" parent="UI/VBoxContainer"]
+custom_minimum_size = Vector2(200, 20)
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+texture_under = SubResource("GradientTexture2D_wse8f")
+texture_progress = SubResource("GradientTexture2D_ic0uy")
+
+[node name="GoToLeverTitle" type="Label" parent="UI/VBoxContainer"]
+layout_mode = 2
+text = "Aprendizado: Ir à Barra"
+
+[node name="GoToLeverProgress" type="TextureProgressBar" parent="UI/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+texture_under = SubResource("GradientTexture2D_k3n1d")
+texture_progress = SubResource("GradientTexture2D_70uel")
+
+[node name="PressLeverTitle" type="Label" parent="UI/VBoxContainer"]
+layout_mode = 2
+text = "Aprendizado: Pressionar Barra"
+
+[node name="PressLeverProgress" type="TextureProgressBar" parent="UI/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+texture_under = SubResource("GradientTexture2D_2o6r5")
+texture_progress = SubResource("GradientTexture2D_hiqwa")
+
+[node name="SequenceProgressTitle" type="Label" parent="UI/VBoxContainer"]
+layout_mode = 2
+text = "Critério (Sequências Corretas):"
+
+[node name="SequenceProgress" type="TextureProgressBar" parent="UI/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+texture_under = SubResource("GradientTexture2D_udxuc")
+texture_progress = SubResource("GradientTexture2D_cbp6q")
+
+[node name="SequenceProgressLabel" type="Label" parent="UI/VBoxContainer"]
+layout_mode = 2
+
+[node name="ExploreTitle" type="Label" parent="UI/VBoxContainer"]
+layout_mode = 2
+text = "Exploração"
+
+[node name="ExploreProgress" type="TextureProgressBar" parent="UI/VBoxContainer"]
+layout_mode = 2
+max_value = 1.0
+step = 0.01
+texture_under = SubResource("GradientTexture2D_2u3nc")
+texture_progress = SubResource("GradientTexture2D_ikiii")
+
+[node name="ExtinctionTimerLabel" type="Label" parent="UI/VBoxContainer"]
+visible = false
+layout_mode = 2
+text = "10:00"
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.398665, 0)
+navigation_mesh = SubResource("NavigationMesh_wse8f")
+
+[node name="Map" type="Node3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.398665, 0)
+
+[node name="Floor" type="MeshInstance3D" parent="NavigationRegion3D/Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.399297, 0)
+mesh = SubResource("PlaneMesh_t6hkp")
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Map/Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_qlu7n")
+
+[node name="Wall" type="MeshInstance3D" parent="NavigationRegion3D/Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 5, 0)
+mesh = SubResource("BoxMesh_e7jor")
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Map/Wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_2c53v")
+
+[node name="WallArea" type="Area3D" parent="NavigationRegion3D/Map/Wall"]
+script = ExtResource("2_e3hyu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall/WallArea"]
+visible = false
+shape = SubResource("ConcavePolygonShape3D_2c53v")
+
+[node name="Wall1" type="MeshInstance3D" parent="NavigationRegion3D/Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, 0)
+mesh = SubResource("BoxMesh_5mqqy")
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Map/Wall1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall1/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_s475y")
+
+[node name="WallArea" type="Area3D" parent="NavigationRegion3D/Map/Wall1"]
+script = ExtResource("2_e3hyu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall1/WallArea"]
+shape = SubResource("ConcavePolygonShape3D_s475y")
+
+[node name="Wall2" type="MeshInstance3D" parent="NavigationRegion3D/Map"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, 5)
+mesh = SubResource("BoxMesh_rioix")
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Map/Wall2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_o4il3")
+
+[node name="WallArea" type="Area3D" parent="NavigationRegion3D/Map/Wall2"]
+script = ExtResource("2_e3hyu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall2/WallArea"]
+shape = SubResource("ConcavePolygonShape3D_o4il3")
+
+[node name="Wall3" type="MeshInstance3D" parent="NavigationRegion3D/Map"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 5, -5)
+mesh = SubResource("BoxMesh_pabnb")
+skeleton = NodePath("../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Map/Wall3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_11cf3")
+
+[node name="WallArea" type="Area3D" parent="NavigationRegion3D/Map/Wall3"]
+script = ExtResource("2_e3hyu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/Wall3/WallArea"]
+shape = SubResource("ConcavePolygonShape3D_11cf3")
+
+[node name="ResponseLever" type="MeshInstance3D" parent="NavigationRegion3D/Map"]
+transform = Transform3D(0.707107, -0.707107, 0, 0.707107, 0.707107, 0, 0, 0, 1, 4.85, 2.40425, 0)
+mesh = SubResource("BoxMesh_dcd3y")
+skeleton = NodePath("../../..")
+script = ExtResource("3_q5onr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Map/ResponseLever"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/ResponseLever/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pgku3")
+
+[node name="Click" type="AudioStreamPlayer3D" parent="NavigationRegion3D/Map/ResponseLever"]
+transform = Transform3D(0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0, 1, -5.55079, 1.30815, 0)
+stream = ExtResource("4_jhx03")
+volume_db = 6.095
+
+[node name="ResponseLeverArea" type="Area3D" parent="NavigationRegion3D/Map/ResponseLever"]
+script = ExtResource("5_o8fc1")
+
+[node name="ResponseLeverAreaCollision" type="CollisionShape3D" parent="NavigationRegion3D/Map/ResponseLever/ResponseLeverArea"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.373169, -3.57628e-07, 0)
+shape = SubResource("BoxShape3D_n08cw")
+
+[node name="FoodDispenser" type="MeshInstance3D" parent="NavigationRegion3D/Map" groups=["food"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.04735, 1, -1.4877)
+mesh = SubResource("BoxMesh_v70bd")
+skeleton = NodePath("../../..")
+script = ExtResource("7_dss4m")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D/Map/FoodDispenser"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Map/FoodDispenser/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_fxt0n")
+
+[node name="FoodArea" type="Area3D" parent="NavigationRegion3D/Map/FoodDispenser"]
+script = ExtResource("8_7t5mc")
+
+[node name="FoodAreaCollision" type="CollisionShape3D" parent="NavigationRegion3D/Map/FoodDispenser/FoodArea"]
+shape = SubResource("BoxShape3D_bfbc0")
+disabled = true
+
+[node name="FoodAreaSmell" type="Area3D" parent="NavigationRegion3D/Map/FoodDispenser"]
+script = ExtResource("9_lakw3")
+
+[node name="FoodAreaSmellCollision" type="CollisionShape3D" parent="NavigationRegion3D/Map/FoodDispenser/FoodAreaSmell"]
+transform = Transform3D(8, 0, 0, 0, 8, 0, 0, 0, 8, 0, 0, 0)
+shape = SubResource("SphereShape3D_26t71")
+disabled = true
+
+[node name="Personagem" parent="." instance=ExtResource("10_pm21f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.608257, 0)
+
+[node name="RigRoot" parent="Personagem/Rat" index="0"]
+transform = Transform3D(2.54, 0, 0, 0, -1.11027e-07, 2.54, 0, -2.54, -1.11027e-07, -1.17213e-05, -1.21117e-05, 1.52729e-12)
+
+[connection signal="button_down" from="UI/VBoxContainer2/Button" to="NavigationRegion3D/Map/ResponseLever" method="_on_button_button_down"]
+[connection signal="button_down" from="UI/VBoxContainer2/Button" to="NavigationRegion3D/Map/FoodDispenser" method="_on_button_button_down"]
+[connection signal="button_down" from="UI/VBoxContainer2/Button" to="Personagem" method="_on_button_button_down"]
+[connection signal="button_down" from="UI/VBoxContainer2/Button2" to="Personagem" method="_on_button_2_button_down"]
+
+[editable path="Personagem"]
+[editable path="Personagem/Rat"]

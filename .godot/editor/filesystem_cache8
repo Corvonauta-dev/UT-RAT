@@ -1,0 +1,50 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1747863691
+Area3D.gd::GDScript::-1::1723592556::0::1::::<>Area3D<>::
+export_presets.cfg::TextFile::-1::1743800227::0::1::::<><>::
+FoodArea.gd::GDScript::-1::1723592615::0::1::::Food<>Area3D<>::
+FoodAreaC.gd::GDScript::-1::1739922427::0::1::::Smell<>Area3D<>::
+FoodDispenser.gd::GDScript::-1::1739928680::0::1::::<>MeshInstance3D<>::
+green.tres::StandardMaterial3D::6489732810082787322::1747836856::0::1::::<><>::
+icon.svg::CompressedTexture2D::8619709586152117831::1722116818::1722116840::1::::<><>::
+Player.gd::GDScript::-1::1747842192::0::1::::<>CharacterBody3D<>::
+rat.gd::GDScript::-1::1747777422::0::1::::<>Node3D<>::
+rat.tscn::PackedScene::4911320831387244717::1747838524::0::1::::<><>::uid://du21f3tv54lp5::::res://rat with 12 animations/Rat_gltf/Rat.gltf
+rat_teste.gd::GDScript::-1::1747837798::0::1::::<>Node3D<>::
+rat_teste.tscn::PackedScene::7100075258389135293::1747838524::0::1::::<><>::uid://du21f3tv54lp5::::res://rat with 12 animations/Rat_gltf/Rat.gltf<>res://rat_teste.gd
+ResponseLeverArea.gd::GDScript::-1::1739924370::0::1::::Lever<>Area3D<>::
+WallArea.gd::GDScript::-1::1739926672::0::1::::Wall<>Area3D<>::
+white.tres::StandardMaterial3D::1148885180629440592::1747836856::0::1::::<><>::
+world.tscn::PackedScene::7580942388973831697::1747838524::0::1::::<><>::res://scripts/ResponseLever.gd<>res://WallArea.gd<>uid://bg40s06hjoh28::::res://sounds/Click.mp3<>uid://qmr8as714n5y::::res://white.tres<>res://FoodDispenser.gd<>res://ResponseLeverArea.gd<>res://Player.gd<>res://FoodArea.gd<>res://FoodAreaC.gd<>uid://c8flg4yfkr6o4::::res://rat_teste.tscn
+::res://assets/::1747682408
+stegosaurs_SStenops.glb::PackedScene::1673161775382946324::1723597348::1723597483::1::::<><>::uid://b2ao65he84g16::::res://assets/stegosaurs_SStenops_stegoDiffuseGreen1.png<>uid://cfsj3o8kcd87d::::res://assets/stegosaurs_SStenops_stegoMetal-stego_rough.png<>uid://bj67m24p71tie::::res://assets/stegosaurs_SStenops_stegoNormal.png
+stegosaurs_SStenops_stegoDiffuseGreen1.png::CompressedTexture2D::4282426446170881379::1723597478::1723597483::1::::<><>::
+stegosaurs_SStenops_stegoMetal-stego_rough.png::CompressedTexture2D::5161541627076307071::1723597481::1723597483::1::::<><>::
+stegosaurs_SStenops_stegoNormal.png::CompressedTexture2D::3084081823761751376::1723597476::1723597484::1::::<><>::
+::res://assets/tripo_convert_7697831c-2440-4c01-bb1d-a4884e6dec1e/::1747682408
+Diffuse_Bake.jpg::CompressedTexture2D::7261969827160532289::1740707290::1740667817::1::::<><>::
+Metallic.jpg::CompressedTexture2D::6862831262644437846::1740707290::1740667807::1::::<><>::
+Normal_Bake.jpg::CompressedTexture2D::8226596471709095620::1740707290::1740667811::1::::<><>::
+Roughness.jpg::CompressedTexture2D::8456031605495550999::1740707290::1740667816::1::::<><>::
+tripo_convert_7697831c-2440-4c01-bb1d-a4884e6dec1e.obj::Mesh::1391599837142941529::1740707290::1740667813::1::::<><>::uid://dbp0t14sdq8an::::res://assets/tripo_convert_7697831c-2440-4c01-bb1d-a4884e6dec1e/Diffuse_Bake.jpg<>uid://dsqfutq5a5ljj::::res://assets/tripo_convert_7697831c-2440-4c01-bb1d-a4884e6dec1e/Roughness.jpg
+::res://builds/::1747682408
+::res://builds/v.1.0.0.0/::1747682408
+::res://rat with 12 animations/::1747771430
+screenshot004.jpg::CompressedTexture2D::4462095790603743194::1747771220::1747771430::1::::<><>::
+screenshot019.jpg::CompressedTexture2D::207077716855131087::1747771220::1747771430::1::::<><>::
+::res://rat with 12 animations/Rat_gltf/::1747777664
+Rat.gd::GDScript::-1::1747777664::0::1::::<>Node3D<>::
+Rat.gltf::PackedScene::8620366194981492336::1747771357::1747776582::1::::<><>::
+Rat_0.jpg::CompressedTexture2D::6885119210062071240::1747771431::1747771436::1::::<><>::
+Rat_1.jpg::CompressedTexture2D::1879343050715466845::1747771433::1747771436::1::::<><>::
+Rat_2.jpg::CompressedTexture2D::4831030256437093007::1747771433::1747771436::1::::<><>::
+::res://rat with 12 animations/Textures/::1747771430
+Ch_Rat_01_A_Albedo2.png::CompressedTexture2D::2062997738667612692::1747771365::1747771430::1::::<><>::
+Ch_Rat_01_A_Albedo.png::CompressedTexture2D::7994235234947778947::1747771364::1747771430::1::::<><>::
+Ch_Rat_01_A_Normal.png::CompressedTexture2D::5952061242932246273::1747771365::1747771430::1::::<><>::
+Ch_Rat_01_A_Raughness.png::CompressedTexture2D::1994221633408180499::1747771365::1747771429::1::::<><>::
+Ch_Rat_01_A_Spec.png::CompressedTexture2D::5487153561977754434::1747771365::1747771429::1::::<><>::
+::res://scripts/::1747682408
+ResponseLever.gd::GDScript::-1::1739928541::0::1::::<>MeshInstance3D<>::
+::res://sounds/::1747682408
+Click.mp3::AudioStreamMP3::2868972130801803379::1723517169::1723517296::1::::<><>::

@@ -1,0 +1,15 @@
+StaticBody3D
+MeshInstance3D
+PanelContainer
+VBoxContainer
+Button
+RichTextLabel
+TextureProgressBar
+Label
+HBoxContainer
+MarginContainer
+BoxContainer
+ColorRect
+Polygon2D
+CanvasLayer
+FollowTarget
