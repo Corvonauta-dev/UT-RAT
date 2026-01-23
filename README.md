@@ -149,4 +149,3 @@ git clone https://github.com/seu-usuario/projeto-skinner-3d.git
 
 
 ---
-teste
