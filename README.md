@@ -104,7 +104,11 @@ O aprendizado é guiado por um protocolo de quatro fases:
 
 ## 💻 Como Executar
 
-1. Faça o download da **Godot Engine 4.4.1** ou superior.
+Faça o download de [UT-Rat Executavel](https://github.com/Corvonauta-dev/UT-RAT/blob/main/UT-Rat%20Executavel.zip) e extraía o arquivo executavel.
+
+### Ou sigua os seguintes passos:
+
+1. Faça o download da **Godot Engine 4.4.1**.
 
 
 2. Clone este repositório:
