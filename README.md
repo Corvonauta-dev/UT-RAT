@@ -124,7 +124,7 @@ git clone https://github.com/seu-usuario/projeto-skinner-3d.git
 * **Osni Junior dos Santos** - *Mestrado em Ensino de Ciência e Tecnologia & Ciência da Computação - UTFPR/PG*.
 
 
-* **Luiz Guilherme Monteiro Padilha** - *Mesrtando em Ciencia da Computação - PPGCC/UTFPR/PG*.
+* **Luiz Guilherme Monteiro Padilha** - *Mestrando em Ciencia da Computação - PPGCC/UTFPR/PG*.
 
 
 * **Simone Bello Kaminski Aires** - *UTFPR/PG*.
