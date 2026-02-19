@@ -13,7 +13,8 @@ config_version=5
 config/name="UT-RAT"
 run/main_scene="res://scenes/world.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://b8vte27kk1nxy"
+config/windows_native_icon="res://assets/Icon.ico"
 
 [display]
 
